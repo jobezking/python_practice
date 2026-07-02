@@ -1,0 +1,1 @@
+print("Jesus Christ is Lord")
