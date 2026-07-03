@@ -1,6 +1,9 @@
 print("Jesus Christ is Lord")
 outline = "Jesus Christ is the Son of God and Savior of humanity."
+length = len(outline)
 print("It is true that" + outline)
+print(outline[:length//2])
+print(outline[length//2:])
 
 for i in range(5):
     print(f"Iteration {i + 1}: Remember to follow the teachings of Jesus Christ.")
