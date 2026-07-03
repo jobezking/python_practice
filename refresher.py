@@ -19,4 +19,11 @@ else:
 def to_celsius(x):
     return (x-32) * 5/9
 
+def convert_seconds(seconds):
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    remaining_seconds = seconds % 60
+    return hours, minutes, remaining_seconds
+
 to_celsius(75)
+hrs, minutes, seconds = convert_seconds(3661)
