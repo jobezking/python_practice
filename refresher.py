@@ -5,6 +5,25 @@ print("It is true that" + outline)
 print(outline[:length//2])
 print(outline[length//2:])
 
+name = "Manny"
+number = len(name) * 3
+print("Hello {}, your lucky number is {}".format(name, number))
+print("Your lucky number is {number}, {name}.".format(name=name, number=len(name)*3))
+
+fruits = ["Pineapple", "Banana", "Apple", "Melon"]
+fruits.append("Kiwi")
+print(fruits)
+
+fruits = ["Pineapple", "Banana", "Apple", "Melon"]
+fruits.insert(0, "Orange")
+print(fruits)
+
+coordinates = (40.7128, -74.0060)  # tuple representing latitude and longitude of New York City
+
+x = ["Now", "we", "are", "cooking!"]
+if "Today" not in x:
+    print("Today is not in the list.")
+
 for i in range(5):
     print(f"Iteration {i + 1}: Remember to follow the teachings of Jesus Christ.")
 
