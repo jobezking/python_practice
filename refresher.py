@@ -123,6 +123,15 @@ for home_team in teams:
     if home_team != away_team:
       print(home_team + " vs " + away_team)
 
+file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+print(file_counts)
+file_counts["txt"]
+"jpg" in file_counts
+"html" in file_counts
+file_counts["cfg"] = 8
+file_counts["csv"] = 17
+del file_counts["cfg"]
+
 def factorial(n):
   if n < 2:
     return 1
