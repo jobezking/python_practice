@@ -87,6 +87,29 @@ for value in values:
 
 print("Total sum: " + str(sum) + " - Average: " + str(sum/length))
 
+multiples = []
+for x in range(1,11):
+  multiples.append(x*7)
+
+print(multiples)
+
+multiples = [x*7 for x in range(1,11)]
+print(multiples)
+
+languages = ["Python", "Perl", "Ruby", "Go", "Java", "C"]
+lengths = [len(language) for language in languages]
+print(lengths)
+
+z = [x for x in range(0,101) if x % 3 == 0]
+print(z)
+
+new_list = []
+for thing in list_of_things:
+   new_list.append(do_something(thing))
+
+# Create a list of tuples where each tuple contains the numbers 1, 2, and 3.
+numbers = [(1, 2, 3) for _ in range(5)]
+
 product = 1
 for n in range(1,10):
   product = product * n
