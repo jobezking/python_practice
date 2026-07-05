@@ -132,6 +132,35 @@ file_counts["cfg"] = 8
 file_counts["csv"] = 17
 del file_counts["cfg"]
 
+file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+for ext, amount in file_counts.items():
+  print("There are {} files with the .{} extension".format(amount, ext))
+
+file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+file_counts.keys()
+file_counts.values()
+
+file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+for value in file_counts.values():
+  print(value)
+
+key = 'banana'
+if key in myDictionary:
+	print(f"The value of {key} is {myDictionary[key]}")
+else:
+	print(f"{key} is not found in the dictionary")
+
+def count_letters(text):
+  result = {}
+  for letter in text:
+    if letter not in result:
+      result[letter] = 0
+    result[letter] += 1
+  return result
+count_letters("aaaaa")
+count_letters("tenant")
+count_letters("a long string with a lot of letters")
+
 def factorial(n):
   if n < 2:
     return 1
