@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 print("Jesus Christ is Lord")
 outline = "Jesus Christ is the Son of God and Savior of humanity."
 length = len(outline)
