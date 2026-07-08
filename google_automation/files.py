@@ -27,7 +27,7 @@ lines.sort()
 print(lines)
 
 f = open("sample_data/declaration.txt", "w")
-f = open('workfile', 'w', encoding="utf-8") 
+f = open('workfile', 'w', encoding="utf-8")
 
 with open("novel.txt", "w") as file:
     file.write("It was a dark and stormy night")
