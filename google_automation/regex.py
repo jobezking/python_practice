@@ -99,6 +99,11 @@ def rearrange_name2(name):
     return "{} {}".format(result[2], result[1])
 rearrange_name2("Hopper, Grace M.")
 
+re.split(r"[.?!]", "One sentence. Another one? And the last one!")
+re.sub(r"[\w.%+-]+@[\w.-]+", "[REDACTED]", "Received an email for go_nuts95@my.example.com")
+re.sub(r"^([\w .-]*), ([\w .-]*)$", r"\2 \1", "Lovelace, Ada")
+
+re.sub(r"([A-Z])\.\s+(\w+)", r"Ms. \2", "A. Weber and B. Bellmas have joined the team.")
 
 # r"\d{3}-\d{3}-\d{4}"  This line of code matches U.S. phone numbers in the format 111-222-3333.
 
