@@ -74,6 +74,15 @@ print(result[1])
 print(result[2])
 "{} {}".format(result[2], result[1])
 
+print(re.search(r"[a-zA-Z]{5}", "a ghost"))
+print(re.search(r"[a-zA-Z]{5}", "a scary ghost appeared"))
+
+print(re.findall(r"[a-zA-Z]{5}", "a scary ghost appeared"))
+re.findall(r"\b[a-zA-Z]{5}\b", "A scary ghost appeared")
+print(re.findall(r"\w{5,10}", "I really like strawberries"))
+print(re.findall(r"\w{5,}", "I really like strawberries"))
+print(re.search(r"s\w{,20}", "I really like strawberries"))
+
 def rearrange_name(name):
     result = re.search(r"^(\w*), (\w*)$", name)
     if result is None:
