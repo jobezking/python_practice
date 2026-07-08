@@ -1,5 +1,6 @@
 import os
 import datetime
+import csv
 
 file = open("spider.txt")
 print(file.readline())
@@ -33,6 +34,7 @@ with open("novel.txt", "w") as file:
     file.write("It was a dark and stormy night")
 
 #CWD command for external files:
+outputs = {}
 outputs['current_directory_before'] = os.getcwd()
 
 print(os.getcwd())
@@ -60,16 +62,22 @@ os.path.abspath("spider.txt")
 timestamp = os.path.getmtime("spider.txt")
 datetime.datetime.fromtimestamp(timestamp)
 
-"""
-The mode argument is optional, and it specifies the mode in which the file is opened. If omitted, it defaults to ”r” and that means opening for reading in text mode. The common modes include:
+f = open("csv_file.txt")
+csv_f = csv.reader(f)
+for row in csv_f:
+   name, phone, role = row
+   print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
+f.close()
 
-"r"  open for reading (default)
 
-"w" open for writing, truncating the file first
+#The mode argument is optional, and it specifies the mode in which the file is opened. If omitted, it defaults to ”r” and that means opening for reading in text mode. The common modes include:
 
-"x"  open for exclusive creation, failing if the file already exists
+#   "r"  open for reading (default)
 
-"a"  open for writing, appending to the end of the file if it exists
+#   "w" open for writing, truncating the file first
 
-"+"  open for both reading and writing
-"""
+#"x"  open for exclusive creation, failing if the file already exists
+
+#   "a"  open for writing, appending to the end of the file if it exists
+
+#   "+"  open for both reading and writing
