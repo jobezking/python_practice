@@ -1,4 +1,5 @@
 import os
+import datetime
 
 file = open("spider.txt")
 print(file.readline())
@@ -33,7 +34,32 @@ with open("novel.txt", "w") as file:
 
 #CWD command for external files:
 outputs['current_directory_before'] = os.getcwd()
-    
+
+print(os.getcwd())
+os.mkdir("new_dir")
+os.remove("novel.txt")
+os.chdir("new_dir")
+os.mkdir("newer_dir")
+os.rmdir("newer_dir")
+os.listdir("website")
+
+dir = "website"
+for name in os.listdir(dir):
+    fullname = os.path.join(dir, name)
+    if os.path.isdir(fullname):
+        print("{} is a directory".format(fullname))
+    else:
+        print("{} is a file".format(fullname))
+
+os.rename("first_draft.txt", "finished_masterpiece.txt")
+os.path.exists("finished_masterpiece.txt")
+os.path.getsize("spider.txt")
+os.path.getmtime("spider.txt")
+os.path.abspath("spider.txt")
+
+timestamp = os.path.getmtime("spider.txt")
+datetime.datetime.fromtimestamp(timestamp)
+
 """
 The mode argument is optional, and it specifies the mode in which the file is opened. If omitted, it defaults to ”r” and that means opening for reading in text mode. The common modes include:
 
