@@ -66,6 +66,31 @@ print(re.search(pattern, "this isn't a valid variable"))
 print(re.search(pattern, "my_variable1"))
 print(re.search(pattern, "2my_variable1"))
 
+result = re.search(r"^(\w*), (\w*)$", "Lovelace, Ada")
+print(result)
+print(result.groups())
+print(result[0])
+print(result[1])
+print(result[2])
+"{} {}".format(result[2], result[1])
+
+def rearrange_name(name):
+    result = re.search(r"^(\w*), (\w*)$", name)
+    if result is None:
+        return name
+    return "{} {}".format(result[2], result[1])
+
+rearrange_name("Lovelace, Ada")
+rearrange_name("Ritchie, Dennis")
+
+def rearrange_name2(name):
+    result = re.search(r"^([\w \.-]*), ([\w \.-]*)$", name)
+    if result == None:
+        return name
+    return "{} {}".format(result[2], result[1])
+rearrange_name2("Hopper, Grace M.")
+
+
 # r"\d{3}-\d{3}-\d{4}"  This line of code matches U.S. phone numbers in the format 111-222-3333.
 
 # r"^-?\d*(\.\d+)?$"  This line of code matches any positive or negative number, with or without decimal places.
