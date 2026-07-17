@@ -65,3 +65,11 @@ import os
 import sys
 
 filename = sys.argv[1]
+
+if not os.path.exists(filename):
+    with open(filename, 'w') as f:
+        f.write("This is a new file created by the script.\n")
+    print(f"File '{filename}' created.")
+else:
+    print(f"File '{filename}' already exists.")
+    sys.exit
