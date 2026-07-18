@@ -2,7 +2,7 @@
 
 import unittest
 
-from testing.pytest.tryexcept import validate_user2
+from google_automation.testing.pytest.tryexcept import validate_user2
 
 class TestValidateUser(unittest.TestCase):
   def test_valid(self):

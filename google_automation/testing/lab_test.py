@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import unittest
-from testing.lab import find_email
+from google_automation.testing.lab import find_email
 class EmailsTest(unittest.TestCase):
 
     def test_basic(self):
