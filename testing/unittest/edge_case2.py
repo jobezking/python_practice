@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from google_automation.unittest.unit_test_ex import rearrange_name
+from testing.unittest.unit_test_ex import rearrange_name
 
 #!/usr/bin/env python3
 

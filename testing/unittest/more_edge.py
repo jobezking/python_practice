@@ -1,4 +1,4 @@
-from google_automation.unittest.unit_test_ex import rearrange_name
+from testing.unittest.unit_test_ex import rearrange_name
 
 import unittest
 import re

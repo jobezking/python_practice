@@ -1,6 +1,6 @@
 import unittest
 
-from google_automation.unittest.makecake import CakeFactory
+from testing.unittest.makecake import CakeFactory
 
 class TestCakeFactory(unittest.TestCase):
  def test_create_cake(self):
