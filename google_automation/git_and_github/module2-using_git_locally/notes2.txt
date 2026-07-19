@@ -26,3 +26,12 @@ git commit -m 'Add two new scripts'
 git add gather-information.sh
 git commit --amend -m "add 2 new scripts"   # amend overwrites previous commits
 # do not amend commits that have already been made public
+
+# Rollbacks
+
+cd scripts
+kate all_checks.py  #make changes
+git commit -a -m 'Add call to disk_full function'  # add and commit changes
+
+git revert HEAD
+git log -p -2
