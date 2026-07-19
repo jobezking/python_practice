@@ -2,3 +2,14 @@ cd scripts
 kate all_checks.py
 git commit -a -m "Call check_reboot from main, exit with 1 on error"
 git log
+
+git log -p
+git log --stat
+git diff
+
+git add -p  # allows you to interactively stage specific parts of a modified file 
+            # instead of staging the entire file all at once
+
+git diff
+git diff --staged
+git commit -m 'Add a message when everything is ok'
