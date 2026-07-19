@@ -2,7 +2,7 @@ cd scripts
 atom all_checks.py
 
 git status
-git checkout all_checks.py
+git checkout all_checks.py  # It reverts changes to modified files before they are staged.
 git status
 
 ./all_checks.py > output.txt
