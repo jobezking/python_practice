@@ -10,6 +10,28 @@ git diff
 git add -p  # allows you to interactively stage specific parts of a modified file 
             # instead of staging the entire file all at once
 
+git show commitID #shows a specific commit using commit commitID
+
 git diff
 git diff --staged
 git commit -m 'Add a message when everything is ok'
+
+
+# Review: Deleting and Renaming Files
+cd checks/
+ls -l
+
+git rm process.py
+
+ls -l
+git status
+git commit -m 'Delete unneeded process.py file'
+
+git mv disk_usage.py check_free_space.py
+git status
+git commit -m 'New name for disk_usage.py'
+
+echo .DS_STORE > gitignore
+ls -la
+git add .gitignore 
+git commit -m 'Add a gitignore file, ignoring .DS_STORE files'
