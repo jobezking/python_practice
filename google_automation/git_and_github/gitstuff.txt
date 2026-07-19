@@ -16,3 +16,14 @@ git add disk_usage.py
 git status
 
 git commit
+
+cd checks
+ls -l
+
+git status
+
+kate disk_usage.py 
+git status
+
+git commit -m 'Add periods to the end of sentences.'
+git status
