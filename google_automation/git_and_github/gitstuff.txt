@@ -27,3 +27,45 @@ git status
 
 git commit -m 'Add periods to the end of sentences.'
 git status
+
+
+mkdir scripts
+cd scripts
+git init        #Initialized empty Git repository in /home/user/scripts/.git/
+
+git config -l
+
+sample code all_checks.py:
+#!/usr/bin/env python3
+
+def main():
+    pass
+
+main()
+
+chmod +x all_checks.py
+git status
+
+git add all_checks.py
+git commit
+
+Update file:
+
+#!/usr/bin/env python3
+
+import os
+
+def check_reboot():
+    """Returns True if the computer has a pending reboot."""
+    return os.path.exists("/run/reboot-required")	
+
+def main():
+    pass
+
+main()
+
+
+git status
+git add all_checks.py 
+git status
+git commit -m 'Add a check_reboot function'
