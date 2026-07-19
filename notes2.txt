@@ -1,0 +1,14 @@
+cd scripts
+atom all_checks.py
+
+git status
+git checkout all_checks.py
+git status
+
+./all_checks.py > output.txt
+git add *
+git status
+
+git reset HEAD output.txt  #   use "git reset HEAD <file>..." to unstage
+git status
+git commit -m "it should be os.path.exists"
