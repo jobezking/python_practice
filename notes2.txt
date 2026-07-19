@@ -12,3 +12,17 @@ git status
 git reset HEAD output.txt  #   use "git reset HEAD <file>..." to unstage
 git status
 git commit -m "it should be os.path.exists"
+
+# Amending commits
+
+cd scripts/
+touch auto-update.py
+touch gather-information.sh
+ls -l
+
+git add auto-update.py
+git commit -m 'Add two new scripts'
+
+git add gather-information.sh
+git commit --amend -m "add 2 new scripts"   # amend overwrites previous commits
+# do not amend commits that have already been made public
