@@ -1,0 +1,29 @@
+cd ~/food-scripts; ls  # favorite_foods.log  food_count.py  food_question.py
+cat favorite_foods.log  # returns list of favourite foods
+./food_count.py # This script returns a list of each food and the number of times the food appeared in the favorite_foods.log file.
+./food_question.py  # breaks NameError: name 'item' is not defined on line 10
+
+git status  # displays paths that have differences between the index file and the current HEAD commit
+git log  # 
+git branch
+
+git config user.name "Name" && git config user.email "user@example.com"
+
+git branch improve-output   # creates branch improve-output
+git checkout improve-output  # make improve-output working branch
+
+nano food_count.py
+print("Favourite foods, from most popular to least popular")
+./food_count.py
+git add food_count.py
+git commit -m "Adding a line in the output describing the utility of food_count.py script"
+
+./food_question.py  #breaks again
+git log  # will have " "Rename item variable to food_item" as commit 21cf376832fa6eace35c0bf9e4bae4a3400452e9 (master)
+git revert 21cf376832fa6eace35c0bf9e4bae4a3400452e9
+./food_question.py      #fixed now
+
+git checkout master
+git merge improve-output
+git status          # On branch master nothing to commit, working tree clean
+git log
