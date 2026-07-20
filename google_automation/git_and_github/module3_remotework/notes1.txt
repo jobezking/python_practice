@@ -1,0 +1,8 @@
+git clone https://github.com/redquinoa/health-checks.git
+cd health-checks/
+ls -l
+echo "Add last line" >> README.md
+git commit -a -m "Add one more line to README.md"
+git push
+git config --global credential.helper cache
+git pull
