@@ -1,0 +1,34 @@
+git branch
+git merge even-better-feature
+git log
+
+kate free_memory.py
+#!/usr/bin/env python3
+  
+def main():
+    """Checks if there's enough free memory in the computer."""
+
+main()
+
+git commit -a -m 'Add comment to main()'
+
+git checkout even-better-feature 
+
+kate free_memory.py 
+#!/usr/bin/env python3
+  
+def main():
+    print("Everything ok.")
+
+main()
+
+git commit -a -m 'Print everything ok'
+git checkout master
+git merge even-better-feature  # fails because of uncommitted files
+git status
+
+git add free_memory.py
+git status
+git commit
+
+git log --graph --oneline
