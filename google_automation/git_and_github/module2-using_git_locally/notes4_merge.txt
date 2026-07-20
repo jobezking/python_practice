@@ -32,3 +32,11 @@ git status
 git commit
 
 git log --graph --oneline
+
+Section 2: Git Branching Study Guide
+
+Now that you've learned about branches and merging, use this study guide as an easy reference for Git branching. This study guide gives a brief explanation of these useful commands along with a link to the Git documentation for each command. Keeping study guides like this one easily accessible can help you code more efficiently.
+
+CommandExplanation & Linkgit branch$ git branch can be used to list, create, or delete branches.git branch <name>$ git branch <name> can be used to create a new branch in your repository.git branch -d <name>$ git branch -d <name> can be used to delete a branch from your repository.git branch -D <name>$ git branch -D <branch> forces a branch to be deleted.git checkout <branch>$ git checkout <branch> switches your current working branch.git checkout -b <new-branch>$ git checkout -b <new-branch> creates a new branch and makes it your current working branch.git merge <branch>$ git merge <branch> joins changes from one branch into another branch.git merge --abort$ git merge --abort can only be used after merge conflicts. This command will abort the merge and try to go back to the pre-merge state.git log --graph$ git log --graph prints an ASCII graph of the commit and merge history.git log --oneline$ git log --oneline prints each commit on a single line.
+
+Keep this table handy while you are getting comfortable using Git branches and merging. Now, it's time to put your newfound knowledge of Git branches and merging to use!
