@@ -1,0 +1,35 @@
+git pull
+git -log -p -1
+git remote show origin
+
+Code output: 
+
+* remote origin
+
+  Fetch URL: https://github.com/redquinoa/health-checks.git
+
+  Push  URL: https://github.com/redquinoa/health-checks.git
+
+  HEAD branch: master
+
+  Remote branches:
+
+    experimental tracked
+
+    master       tracked
+
+  Local branch configured for 'git pull':
+
+    master merges with remote master
+
+  Local ref configured for 'git push':
+
+    master pushes to master (up to date)
+
+git checkout experimental
+
+Code output: 
+
+Branch 'experimental' set up to track remote branch 'experimental' from 'origin'.
+
+Switched to a new branch 'experimental'
