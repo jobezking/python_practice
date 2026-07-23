@@ -1,0 +1,31 @@
+echo "This is the readme file" >> README
+git commit -m 'Rename min_absolute to min_gb, use parameter names'
+git push
+git pull
+git log --graph --oneline --all
+git log -p origin/master
+git add README
+git commit
+git push
+git log --graph --oneline
+
+git checkout -b refactor
+echo "This is the updated readme file" >> README
+git commit -a -m 'update README'
+
+echo "Update README file again" >> README
+git commit -a -m 'try again to update README'
+
+git push -u origin refactor
+
+git checkout master
+git pull
+git log --graph --oneline --all
+git checkout refactor
+git rebase master
+git log --graph --oneline
+git checkout master
+git merge refactor
+git push --delete origin refactor
+git branch -d refactor
+git push
