@@ -1,0 +1,11 @@
+cd health-checks/
+atom README.md
+
+git commit -a
+
+Update README to use the new name of the script
+
+Also add more information about how this works. 
+Closes #1
+
+git push
