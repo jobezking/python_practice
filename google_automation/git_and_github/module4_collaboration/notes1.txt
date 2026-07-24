@@ -20,6 +20,10 @@ git push
 git push -f
 git log --graph --oneline --all -4
 
+git commit -a --amend
+git status
+git push -f
+
 GitHub is an open-source platform for collaboration and knowledge sharing, allowing users to explore code created by others. This study guide will provide you with pointers on effectively using the platform to make pull requests in the Git environment.
 
 Pull requests
